@@ -1,0 +1,20 @@
+<h1> Dragon Ball Z personajes</h1>
+<hr>
+
+<div class="row">
+
+  <!-- 1a columna listado de personajes -->
+  <div class="col">
+
+    <dbz-listado (onDelete)="borrarPersonaje($event)" [personajeList]="personajes"></dbz-listado>
+
+  </div>
+
+  <!-- 2a columna agregar un personaje -->
+  <div class="col">
+
+    <dbz-agregar-personaje (onNewPersonaje)="agregarPersonaje($event)"></dbz-agregar-personaje>
+
+  </div>
+
+</div>
